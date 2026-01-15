@@ -104,11 +104,11 @@ nav .button a:hover {
 #banner .banner-content .button {
     padding-top: 45px;
 }
-#banner .banner-content .button a {
+#banner .banner-content .button .btn2 {
     text-decoration: none;
     border: none;
     background-color: #30B868;
-    padding: 16.5px 30px 16.5px 16px;
+    padding: 16.5px 20px 16.5px 16px;
     border-radius: 4px;
     font-size: 16px;
     font-weight: 600;
@@ -118,12 +118,12 @@ nav .button a:hover {
 #banner .banner-content .button .btn2 i {
     margin-left: 10px;
 }
-#banner .banner-content .button a:first-child:hover {
+#banner .banner-content .button .btn2:hover {
     border: 1px solid white;
     background-color: transparent;
     color: rgba(255, 255, 255, 1);
 }
-#banner .banner-content .button a {
+#banner .banner-content .button .btn3 {
     text-decoration: none;
     border: none;
     background-color: #30B868;
@@ -136,7 +136,7 @@ nav .button a:hover {
 #banner .banner-content .button .btn3 i {
     margin-right: 10px;
 }
-#banner .banner-content .button a:last-child:hover {
+#banner .banner-content .button .btn3:hover {
     border: 1px solid white;
     background-color: transparent;
     color: rgba(255, 255, 255, 1);
@@ -178,6 +178,7 @@ nav .button a:hover {
     height: 300px;
     text-align: center;
     background-color: rgb(255, 255, 255);
+    border-radius: 7px;
     padding: 67px 15px;
 }
 #Info-section .info-container .info-card .cards img {
@@ -252,4 +253,55 @@ nav .button a:hover {
     font-size: 16px;
     font-weight: 500;
     color: rgba(0, 25, 49, 1);
+}
+#Join-sec {
+    width: 100%;
+    height: 506px;
+}
+#Join-sec .sec-container {
+    width: 87%;
+    max-width: 1400px;
+    height: 384px;
+    margin: 0 auto;
+    align-content: center;
+    border-radius: 12px;
+    background-color: rgba(247, 246, 242, 1);
+}
+#Join-sec .sec-container .contents{
+    text-align: center;
+}
+#Join-sec .sec-container .contents h3{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+#Join-sec .sec-container .contents .p1 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    padding-top: 16px;
+    padding-bottom: 42px;
+}
+#Join-sec .sec-container .contents .btn5 {
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #30B868;
+    padding: 16.5px 16px 16.5px 16px;
+    border-radius: 4px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.12);
+    color: rgba(255, 255, 255, 1);
+}
+#Join-sec .sec-container .contents .btn5 i {
+    margin-left: 10px;
+}
+#Join-sec .sec-container .contents .btn5:hover {
+    background-image: linear-gradient(90deg,rgba(111, 168, 77, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(90, 224, 81, 1) 100%);
+    color: rgba(247, 246, 242, 1);
+}
+#Join-sec .sec-container .contents .p2 {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 40px;
 }
