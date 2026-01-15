@@ -9,32 +9,33 @@
   font-optical-sizing: auto;
 }
 
-header{
+header {
     background-color: #FFFFFF;
 }
 nav {
-    width: 85%;
-    max-width: 1360px;
+    width: 87%;
+    max-width: 1400px;
     margin: 16px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
 }
-nav .nav-col ul{
+nav .nav-col ul {
     display: flex;
     gap: 32px;
     list-style-type: none;
     align-items: center;
 }
-nav .nav-col ul a{
+nav .nav-col ul a {
     font-size: 16px;
     font-weight: 500;
     color: #000000;
     text-decoration: none;
     text-transform: capitalize;
 }
-nav .btn button {
+nav .button a {
+    text-decoration: none;
     border: none;
     background-color: #30B868;
     padding: 12.5px 16px;
@@ -43,7 +44,12 @@ nav .btn button {
     font-weight: 600;
     color: rgba(255, 255, 255, 1);
 }
-#banner{
+nav .button a:hover {
+    background-image: linear-gradient(90deg,rgba(111, 168, 77, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(90, 224, 81, 1) 100%);
+    color: rgba(247, 246, 242, 1);
+}
+
+#banner {
     background-image: url('./images/hero-bg.png');
     width: 100%;
     height: 674px;
@@ -51,16 +57,18 @@ nav .btn button {
     background-repeat: no-repeat;
     align-content: center;
 }
-#banner .banner-content{
+#banner .banner-content {
+    width: 87%;
     max-width: 1400px;
     text-align: center;
     margin: 0 auto;
     padding-top: 115px;
     padding-bottom: 179px;
 }
-#banner .banner-content .btn1{
+#banner .banner-content a {
+    text-decoration: none;
     border: none;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(255, 255, 255,1);
     padding: 8px 12px 8px 12px;
     border-radius: 50px;
     font-size: 16px;
@@ -68,13 +76,17 @@ nav .btn button {
     color: #30B868;
     text-align: center;
 }
-#banner .banner-content .btn1 img{
+#banner .banner-content a:hover{
+    background-color: rgb(242, 241, 238);
+    color: #2b794c;
+}
+#banner .banner-content a img {
     width: 19px;
     height: 13px;
     border-radius: 8px;
     padding-right: 6px;
 }
-#banner .banner-content h1{
+#banner .banner-content h1 {
     font-size: 72px;
     font-weight: 700;
     text-transform: capitalize;
@@ -82,17 +94,17 @@ nav .btn button {
     padding-bottom: 10px;
     color: rgba(255, 255, 255, 1);
 }
-#banner .banner-content p{
+#banner .banner-content p {
     font-size: 18px;
     font-weight: 400;
     line-height: 36px;
     color: rgba(255, 255, 255, 1);
     text-align: center;
 }
-#banner .banner-content .button{
-    padding-top: 32px;
+#banner .banner-content .button {
+    padding-top: 45px;
 }
-#banner .banner-content .button a{
+#banner .banner-content .button a {
     text-decoration: none;
     border: none;
     background-color: #30B868;
@@ -103,16 +115,15 @@ nav .btn button {
     color: rgba(255, 255, 255, 1);
     margin-right: 18px;
 }
-#banner .banner-content .button .btn2 i{
+#banner .banner-content .button .btn2 i {
     margin-left: 10px;
 }
-#banner .banner-content .button a:first-child:hover{
+#banner .banner-content .button a:first-child:hover {
     border: 1px solid white;
     background-color: transparent;
     color: rgba(255, 255, 255, 1);
-    border-color:rgba(255, 255, 255, 1);
 }
-#banner .banner-content .button a{
+#banner .banner-content .button a {
     text-decoration: none;
     border: none;
     background-color: #30B868;
@@ -125,9 +136,120 @@ nav .btn button {
 #banner .banner-content .button .btn3 i {
     margin-right: 10px;
 }
-#banner .banner-content .button a:last-child:hover{
+#banner .banner-content .button a:last-child:hover {
     border: 1px solid white;
     background-color: transparent;
     color: rgba(255, 255, 255, 1);
-    border-color:rgba(255, 255, 255, 1);
+}
+#Info-section {
+    width: 100%;
+    height: 450px;
+    background-color: rgb(251, 251, 251);
+}
+#Info-section .info-container {
+    width: 87%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+#Info-section .info-container .info-heading {
+    text-align: center;
+}
+#Info-section .info-container .info-heading h2 {
+    font-size: 48px;
+    font-weight: 700px;
+    color: rgba(0, 25, 49, 1);
+    text-transform: capitalize;
+    padding-top: 68px;
+}
+#Info-section .info-container .info-heading p {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(98, 115, 130, 1);
+    padding-top: 16px;
+    padding-bottom: 44px;
+}
+#Info-section .info-container .info-card {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+#Info-section .info-container .info-card .cards {
+    width: 322px;
+    height: 300px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 67px 15px;
+}
+#Info-section .info-container .info-card .cards img {
+    width: 45px;
+    height: 45px;
+    border:10px solid  rgba(249, 85, 85, 1);
+    border-radius: 50%;
+    background-color: rgba(249, 85, 85, 1);
+}
+#Info-section .info-container .info-card .cards h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(0, 25, 49, 1);
+    padding: 12px 0 16px 0;
+    text-transform: capitalize;
+}
+#Info-section .info-container .info-card .cards p {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(98, 115, 130, 1);
+}
+.Solution-sec {
+    width: 100%;
+    height: 840px;
+    align-items: center;
+}
+.Solution-sec .solution-container {
+    width: 87%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 65px;
+    padding-top: 120px;
+}
+.Solution-sec .solution-container .solution-part {
+    padding: 102px 0;
+}
+.Solution-sec .solution-container .solution-part h5 {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgba(70, 145, 101, 1);
+}
+.Solution-sec .solution-container .solution-part h2 {
+    font-size: 49px;
+    font-weight: 700;
+    color: rgba(0, 25, 49, 1);
+    text-transform: capitalize;
+    padding: 18px 0;
+}
+.Solution-sec .solution-container .solution-part p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(98, 115, 130, 1);
+}
+.Solution-sec .solution-container .solution-part ul {
+    list-style-type: none;
+    padding-top: 40px;
+}
+.Solution-sec .solution-container .solution-part ul li {
+    display: flex;
+    gap: 6px;
+}
+.Solution-sec .solution-container .solution-part ul li:nth-child(2){
+    padding-top: 16px;
+}
+.Solution-sec .solution-container .solution-part ul li:nth-child(3){
+    padding: 16px 0;
+}
+.Solution-sec .solution-container .solution-part ul li p {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 25, 49, 1);
 }
